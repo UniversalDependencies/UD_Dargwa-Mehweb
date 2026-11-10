@@ -1,33 +1,39 @@
-Sun Feb 11 20:37:09 CET 2018
-perl -I perllib/lib/perl5 -I tools tools/evaluate_treebank.pl --verbose UD_Dargwa
-Running the following version of tools/evaluate_treebank.pl:
-commit c1cb17aec6a5505b56b885f578dc6b1093bb4b30
+Running the following version of UD tools:
+commit 59781c63b5b1c2ba74cd2b965d93f371e1c9d36a
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Feb 11 20:27:50 2018 +0100
-Already on 'master'
-Your branch is up-to-date with 'origin/master'.
-Evaluating the following revision of UD_Dargwa:
-commit b5aec96b5e7faa79698b20476709cc6d4788a25b
-Merge: ff06a47 277cf0f
+Date:   Tue Nov 10 13:08:27 2026 +0100
+Evaluating the following revision of UD_Dargwa-Mehweb:
+commit b836c9f7cdeb014bce1328fa337f7322341d6f82
+Merge: ae3e864 f918057
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-WARNING: No data found in './UD_Dargwa'
-Size: counted 1 of 0 words (nodes).
-Size: min(0, log((N/1000)**2)) = 0.
+CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
+Language-treebank code (from CoNLL-U file name) = 'dar_mehweb'
+Language code (from CoNLL-U file name) = 'dar'
+Found the following data files: dar_mehweb-ud-test.conllu
+Size: counted 4403 of 4403 words (nodes).
+Size: min(0, log((N/1000)**2)) = 2.96457225354723.
 Size: maximum value 13.815511 is for 1000000 words or more.
 Split: Did not find more than 10000 training words.
 Split: Did not find at least 10000 development words.
 Split: Did not find at least 10000 test words.
-Lemmas: No lemmas found.
-Universal POS tags: 0 out of 17 found in the corpus.
-Universal POS tags: source of annotation (from README) factor is 0.1.
-Features: 0 out of 0 total words have one or more features.
-Features: source of annotation (from README) factor is 0.4.
-Universal relations: 0 out of 37 found in the corpus.
-Universal relations: source of annotation (from README) factor is 0.1.
-Genres: found 1 out of 14 known.
-Availability: README does not say Includes text: yes
-Availability: No words found.
-STARS = 0
-UD_Dargwa	0	0
-Switched to branch 'dev'
-Your branch is up-to-date with 'origin/dev'.
+Lemmas: source of annotation (from README) factor is 0.8.
+Universal POS tags: 14 out of 17 found in the corpus.
+Universal POS tags: source of annotation (from README) factor is 0.8.
+Features: 3235 out of 4403 total words have one or more features.
+Features: source of annotation (from README) factor is 0.8.
+Universal relations: 29 out of 37 found in the corpus.
+Universal relations: source of annotation (from README) factor is 1.
+Genres: found 1 out of 18 known.
+/net/work/people/zeman/unidep/tools/validate.py --lang dar --max-err=10 UD_Dargwa-Mehweb/dar_mehweb-ud-test.conllu
+*** PASSED ***
+Validity: 1
+(weight=0.111111111111111) * (score{features}=0.8) = 0.0888888888888889
+(weight=0.111111111111111) * (score{genres}=0.0555555555555556) = 0.00617283950617284
+(weight=0.111111111111111) * (score{lemmas}=0.8) = 0.0888888888888889
+(weight=0.37037037037037) * (score{size}=0.214582895153175) = 0.0794751463530279
+(weight=0.0740740740740741) * (score{split}=0.01) = 0.000740740740740741
+(weight=0.111111111111111) * (score{tags}=0.658823529411765) = 0.073202614379085
+(weight=0.111111111111111) * (score{udeprels}=0.783783783783784) = 0.0870870870870871
+(TOTAL score=0.424456205843891) * (availability=1) * (validity=1) = 0.424456205843891
+STARS = 2
+UD_Dargwa-Mehweb	0.424456205843891	2
