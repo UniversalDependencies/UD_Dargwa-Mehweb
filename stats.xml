@@ -5,18 +5,155 @@
        fused is the number of tokens that are split to two or more syntactic words
        The words and fused elements can be omitted if no token is split to smaller syntactic words. -->
   <size>
-    <total><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></total>
+    <total><sentences>961</sentences><tokens>4403</tokens><words>4403</words><fused>0</fused></total>
+    <train><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></train>
+    <dev><sentences>0</sentences><tokens>0</tokens><words>0</words><fused>0</fused></dev>
+    <test><sentences>961</sentences><tokens>4403</tokens><words>4403</words><fused>0</fused></test>
   </size>
-  <lemmas unique="0" /><!--  -->
-  <forms unique="0" /><!--  -->
+  <lemmas unique="532" /><!-- ., nu, le, rasul, ,, aq'as, sabi, !, ca, urši, ʡali, ak'as, ħu, es, abaj -->
+  <forms unique="1349" /><!-- ., ,, !, nu, gʷa, nuni, rasul, leb, urši, ca, lew, ile, rasujni, dize, ħu -->
   <fusions unique="0" /><!--  -->
   <!-- Statistics of universal POS tags. The comments show the most frequent lemmas. -->
-  <tags unique="0">
+  <tags unique="14">
+    <tag name="ADJ">60</tag><!-- ʡaˤχ, q'am, ħunt'a, ara, aˤʡu, eba, q'eju, q'uwat, tamaša, urq' -->
+    <tag name="ADV">91</tag><!-- aq, dag, išbari, haraq'e, kuda, aqnal, hab, hanna, hete, uħna -->
+    <tag name="AUX">173</tag><!-- le, es, ašes, uʔes -->
+    <tag name="CCONJ">3</tag><!-- amma -->
+    <tag name="DET">124</tag><!-- it, iχ, il, har, heš, hel, abzul, het, heč', iš -->
+    <tag name="INTJ">7</tag><!-- ma, hara, qʷe -->
+    <tag name="NOUN">976</tag><!-- urši, abaj, qali, adaj, kung, deč', dursi, uzi, xunul, ʁarʁa -->
+    <tag name="NUM">69</tag><!-- ca, k'ʷi, werħ, šu, ʜaˤb -->
+    <tag name="PART">110</tag><!-- gʷa, ile, k'ʷan, ʡaj, ca, cula, hara, k'a -->
+    <tag name="PRON">376</tag><!-- nu, sabi, ħu, nuša, sija, hi, či, ħuša, abzulaj, ʕuˤ -->
+    <tag name="PROPN">349</tag><!-- rasul, ʡali, musa, muħammad, pat'imat, madina, anwar, allah, meħʷe, maˤʜmud -->
+    <tag name="PUNCT">844</tag><!-- ., ,, !, ?, ..., : -->
+    <tag name="VERB">1220</tag><!-- aq'as, ak'as, aʔas, ges, izes, gʷes, uˤq'es, uhes, es, iges -->
+    <tag name="X">1</tag><!-- uzes -->
   </tags>
   <!-- Statistics of features and values. The comments show the most frequent word forms. -->
-  <feats unique="0">
+  <feats unique="86">
+    <feat name="Aspect" value="Imp" upos="AUX,VERB">311</feat><!-- diguwe, daše, izuwe, luč'uwe, k'uwe, waše, bašina, biq'uwe, izes, uze -->
+    <feat name="Aspect" value="Perf" upos="AUX,VERB">876</feat><!-- ib, aʔib, bet'a, baq'ib, gub, uˤq'es, baq'a, baq'as, bikib, gib -->
+    <feat name="Case" value="Abs" upos="ADJ,DET,NOUN,NUM,PRON,PROPN,VERB">863</feat><!-- nu, rasul, urši, kung, ħu, deč', ca, dursi, ʡali, qali -->
+    <feat name="Case" value="Ade,Ess" upos="DET,NOUN">5</feat><!-- iχdilišur, ustujšub -->
+    <feat name="Case" value="Ade,Lat" upos="DET,NOUN,PRON,PROPN">16</feat><!-- abajšu, dišu, unnališu, (sunnišːu), aħmadišu, damšːu, illišu, iχišu, muħammadišu, nušašu -->
+    <feat name="Case" value="All" upos="NOUN">6</feat><!-- šaˤbaˤʜ -->
+    <feat name="Case" value="Apu,Ess" upos="NOUN">3</feat><!-- kʷihaleʡeˤb, lut'ileʡeˤb, ustujʡeˤb -->
+    <feat name="Case" value="Apu,Tra" upos="NOUN">1</feat><!-- unzaleʡeˤdi -->
+    <feat name="Case" value="Cns" upos="NOUN">1</feat><!-- adajčemadal -->
+    <feat name="Case" value="Com" upos="NOUN,PROPN">5</feat><!-- muħammadiču, rasdisiču, ħalmic'irtiču‹w›ijal, šinču, ʁizbeču -->
+    <feat name="Case" value="Dat" upos="DET,NOUN,NUM,PRON,PROPN,VERB">106</feat><!-- nab, rasujs, sunesal, madinas, sunes, ħad, abajs, calis, ʡalis, uršilis -->
+    <feat name="Case" value="Ela,Inb" upos="DET,NUM,PRON,PROPN,VERB">22</feat><!-- rasujzela, dizela, derbentizela, itizela, berχʷrilizela, calizela -->
+    <feat name="Case" value="Ela,Ine" upos="NOUN">1</feat><!-- tukajħela -->
+    <feat name="Case" value="Ela,Sup" upos="DET,NOUN,PROPN,VERB">6</feat><!-- baˤʜičela, illičela, merʔaničela, muħammadičela, wak'ibičela, χʷeličela -->
+    <feat name="Case" value="Erg" upos="DET,NOUN,NUM,PRON,PROPN,VERB">343</feat><!-- nuni, rasujni, adajni, ʡalini, abajni, itini, nušajni, pat'imatini, uršilini, calini -->
+    <feat name="Case" value="Ess" upos="ADJ,ADV,NOUN,PROPN">18</feat><!-- quliw, určew, aqur, haraq'er, heter, hešer, meħʷeb, qulib, qulir, uħnaw -->
+    <feat name="Case" value="Ess,Inb" upos="NOUN,PROPN">9</feat><!-- baˤʜizeb, arcizeb, k'alalizeb, muherlicːer, rasujzeb, zamajzeb, ħark'ʷizeb, ʁarʁalizeb -->
+    <feat name="Case" value="Ess,Ine" upos="NOUN,VERB">9</feat><!-- daˤʜmic'ajħew, bixibiħew, k'unk'urler, k'unk'urleħer, uškujħew -->
+    <feat name="Case" value="Ess,Lat" upos="NOUN">1</feat><!-- quli -->
+    <feat name="Case" value="Ess,Sup" upos="ADJ,NOUN,PRON,PROPN">13</feat><!-- burχaličer, ustujčeb, dupičeb, muħammadičew, ruziličer, sunečewal, t'ujčeb, uq'lahaličer, ħunt'ajčer, ʁarʁaličew -->
+    <feat name="Case" value="Gen" upos="DET,NOUN,PRON,PROPN">87</feat><!-- dila, sunelal, ħala, sunela, meħʷela, abajla, iχija, muħammadla, nušala, rasuwa -->
+    <feat name="Case" value="Inb,Lat" upos="DET,NOUN,NUM,PRON,PROPN">155</feat><!-- dize, rasujze, calize, ʡalize, uršilize, abajze, adajze, armilize, madinaze, nušaze -->
+    <feat name="Case" value="Ine,Lat" upos="NOUN,PROPN,VERB">20</feat><!-- tukajħe, uškujħe, quli, anžili, q'oˤjħe, agarodleħe, balnicaleħe, šahalliħe, ʡaˤjne -->
+    <feat name="Case" value="Ine,Tra" upos="NOUN">2</feat><!-- hunħedi, unzaleħedi -->
+    <feat name="Case" value="Lat" upos="ADV,NOUN">22</feat><!-- quli, urče, buħna, cenħe, helle, hete, kʷe, šalʔu -->
+    <feat name="Case" value="Lat,Sup" upos="DET,NOUN,NUM,PRON,PROPN">30</feat><!-- sunečel, caliče, beʁiče, c'aliče, huneče, šahalliče, anwalliče, baˤʜiče, dursiličel, itičel -->
+    <feat name="Case" value="Sup" upos="NOUN">1</feat><!-- duburliče -->
+    <feat name="Case" value="Tra" upos="ADV">2</feat><!-- aqudi, udidi -->
+    <feat name="Case" value="Voc" upos="NOUN">2</feat><!-- adaj, urši -->
+    <feat name="ConvType" value="Ant" upos="VERB">7</feat><!-- bak'ibiʁale, wik'ulaʁle, baʔibijaʁle, buquniaʁle, wak'ibijaʁe -->
+    <feat name="ConvType" value="Caus" upos="VERB">5</feat><!-- wik'uwena, baq'ilena, dak'ilena, wak'ilena -->
+    <feat name="ConvType" value="Cntf" upos="VERB">19</feat><!-- webk'ibq'alle, deržesq'alle, waq'unq'alle, ʡaˤšwirkulq'alle, ʡaˤšwirqulq'alle, buʔibq'alle, debk'ibq'alle, dikulq'alle, kibq'alle, ruhubq'alle -->
+    <feat name="ConvType" value="Conc" upos="VERB">5</feat><!-- biq'ak'ara, ħagak'ara, urak'ara -->
+    <feat name="ConvType" value="Conc2" upos="VERB">5</feat><!-- harbulquleʡur, wak'ileʡur, bak'ileʡur -->
+    <feat name="ConvType" value="Cond" upos="AUX,VERB">21</feat><!-- wargak'a, luč'ak'a, duk'ak'ara, gak'a, kak'a, baq'ak'a, belč'ak'a, burhak'a, dargak'a, deržak'a -->
+    <feat name="ConvType" value="Grad" upos="AUX,VERB">5</feat><!-- belčunicad, belčunicad(i), lercad, luč'ulcad(i), luč'ulcadi -->
+    <feat name="ConvType" value="Imm" upos="VERB">3</feat><!-- wak'arijal, waʔarijal -->
+    <feat name="ConvType" value="Incp" upos="VERB">3</feat><!-- wak'ibičela, barxibičela -->
+    <feat name="ConvType" value="Post" upos="VERB">6</feat><!-- bak'ače, luk'eče, berχʷeče, hilbixeče -->
+    <feat name="ConvType" value="Purp" upos="VERB">9</feat><!-- hildixalis, buʔalis, wik'alis, ħabušalis, ħaq'alis -->
+    <feat name="ConvType" value="Smlt" upos="VERB">5</feat><!-- luč'ulijadal, belč'unijadal -->
+    <feat name="ExtPos" value="ADV" upos="PART">1</feat><!-- cula -->
+    <feat name="ExtPos" value="PRON" upos="NUM,PRON">31</feat><!-- calize, calini, calis, caliče, sawi, sa‹w›ijal, sunes, sunezel, sunečel -->
+    <feat name="Gender" value="F1" upos="ADV,AUX,VERB">91</feat><!-- daše, dubk'are, ardikala, dak'e, dak'ib, hildixalis, digaquwe, diguwe, duhe, duk'ak'ara -->
+    <feat name="Gender" value="Fem" upos="ADV,AUX,DET,NOUN,PRON,VERB">53</feat><!-- ler, lella, lelle, sa‹r›i, hillixile, lerdeš, rargira, rač'ib, rebk', (sa‹r›i) -->
+    <feat name="Gender" value="Hum" upos="ADV,AUX,DET,NOUN,PRON,VERB">81</feat><!-- leb, bašina, bulcuwe, kabiʔira, bahur, bak'ače, bak'ibiʁale, bargib, bazaqib, bašaquwe -->
+    <feat name="Gender" value="Masc" upos="ADJ,ADV,AUX,NOUN,PRON,PROPN,VERB">322</feat><!-- lew, sa‹w›ijal, uˤq'es, wak'ib, sa‹w›i, wak'ile, waše, waˤqib, quliw, uze -->
+    <feat name="Gender" value="Neut" upos="ADJ,ADV,AUX,NOUN,PRON,PROPN,VERB">372</feat><!-- leb, baq'ib, baq'a, baq'as, baqib, bikib, baq'ile, bahur, bicile, buˤrʡuˤb -->
+    <feat name="Gender" value="Nhum" upos="ADJ,ADV,AUX,NOUN,PRON,VERB">120</feat><!-- daqil, ler, daq'a, daq'ib, daʔib, diq'es, duhaqab, burχaličer, dalhul, daq'ile -->
+    <feat name="Mood" value="App" upos="VERB">1</feat><!-- ardikala -->
+    <feat name="Mood" value="App,Cnd" upos="VERB">22</feat><!-- arbukala, ardikala, bikala, uhala, urala, waq'ala, ardukala, arduʔala, boˤrʡaqala, bušala -->
+    <feat name="Mood" value="Cnd" upos="AUX,VERB">45</feat><!-- buʔare, dubk'are, wargak'a, luč'ak'a, biq'ak'ara, duk'ak'ara, gak'a, kak'a, urhare, wak'arijal -->
+    <feat name="Mood" value="Cnd,Opt" upos="VERB">29</feat><!-- gab, kalʔab, webk'ab, duhaqab, webk'aqab, balqab, balqaqab, berʔʷab, dalqaqab, daq'ab -->
+    <feat name="Mood" value="Imp" upos="AUX,INTJ,VERB">139</feat><!-- bet'a, baq'a, daše, waše, bašina, daq'a, uze, buca, wak'e, asa -->
+    <feat name="Mood" value="Imp,Prh" upos="VERB">1</feat><!-- mimiq'adina -->
+    <feat name="Mood" value="Ind" upos="AUX,VERB">513</feat><!-- ib, aʔib, baq'ib, gub, bikib, gib, baqib, asib, bahur, wak'ib -->
+    <feat name="Mood" value="Opt" upos="VERB">13</feat><!-- balqaqab, rebk', balqaq, berʔʷ, duhaqab, luč'ab, mirqab, rebk'ab, urcab, webk' -->
+    <feat name="Mood" value="Prh" upos="VERB">22</feat><!-- mimiq'adi, midizad, mulugadi, armiχaqadi, bismimisadi, mamašadina, mibadi, midic'adi, midik'adi, midilcadi -->
+    <feat name="NameType" value="Geo" upos="PROPN">15</feat><!-- meħʷela, derbentizela, anžili, k'alalizeb, meħʷe, meħʷeb, meħʷeja, ʁunib, ʁuniw -->
+    <feat name="NameType" value="Giv" upos="PROPN">328</feat><!-- rasul, rasujni, rasujze, ʡali, ʡalini, musa, rasujs, ʡalize, pat'imatini, anwar -->
+    <feat name="NameType" value="Pro" upos="PROPN">1</feat><!-- q'urʔan -->
+    <feat name="NameType" value="Prs" upos="PROPN">3</feat><!-- mallarasbadijni, buʁa -->
+    <feat name="NameType" value="Sur" upos="PROPN">2</feat><!-- ħamzatow, ʜaˤramirtila -->
+    <feat name="Number" value="Plur" upos="ADJ,ADV,AUX,DET,INTJ,NOUN,PRON,PROPN,VERB">370</feat><!-- nuša, nušajni, ler, daqil, leb, uzbe, bašina, humbe, bulcuwe, daq'a -->
+    <feat name="Number" value="Sing" upos="ADJ,ADV,AUX,NOUN,PRON,PROPN,VERB">1115</feat><!-- nu, nuni, lew, dize, leb, ħu, nab, dila, baq'ib, ler -->
+    <feat name="NumForm" value="Word" upos="NUM">69</feat><!-- ca, calize, calini, calis, caliče, k'ʷijal, k'ʷijalla, caca, cajli, calizela -->
+    <feat name="NumType" value="Card" upos="NUM">68</feat><!-- ca, calize, calini, calis, caliče, k'ʷijal, caca, cajli, calizela, k'ʷijalla -->
+    <feat name="NumType" value="Ord" upos="NUM">1</feat><!-- k'ʷijalla -->
+    <feat name="Person" value="1" upos="PRON">207</feat><!-- nu, nuni, dize, nab, dila, nuša, nušajni, dizela, nura, nušaze -->
+    <feat name="Person" value="2" upos="PRON">56</feat><!-- ħu, ħala, ħad, ħuni, ħaze, ħuša, nu, ħunijal, ħušab, ʕuˤ -->
+    <feat name="Person[subj]" value="1,2" upos="AUX,VERB">92</feat><!-- gubra, asira, bahurra, baq'ira, lella, uˤq'iša, waˤq'unna, buˤrʡaqira, ira, kabiʔira -->
+    <feat name="Polarity" value="Neg" upos="AUX,VERB">87</feat><!-- mimiq'adi, aħin, midizad, mulugadi, ħaburhan, ħadak'ibi, ħagak'ara, ħajzur, ħak'ibi, ħalugan -->
+    <feat name="PronType" value="Dem" upos="DET">110</feat><!-- it, itini, iχ, heš, il, hel, itizela, itti, iχdi, iχdilišur -->
+    <feat name="PronType" value="Ind" upos="PRON">7</feat><!-- sik'al, sik'alt -->
+    <feat name="PronType" value="Int" upos="PRON">12</feat><!-- sija, čija, hinija, hisa, hize -->
+    <feat name="PronType" value="Prs" upos="PRON">356</feat><!-- nu, nuni, dize, ħu, nab, dila, nuša, nušajni, sunesal, sa‹w›ijal -->
+    <feat name="PronType" value="Tot" upos="DET,PRON">15</feat><!-- har, haril, abzulajs, abzulajze, abzulla -->
+    <feat name="Reflex" value="Yes" upos="PRON">93</feat><!-- sunesal, sa‹w›ijal, sunelal, sunes, sa‹w›i, sunejni, sunela, sunejnijal, sunečel, sa‹r›i -->
+    <feat name="Tense" value="Fut" upos="AUX,VERB">26</feat><!-- uˤq'iša, biˤbʡiša, burhiša, uˤq'es, arikes, aruχaqiša, baq'iša, baq'išaw, buhes, daq'iša -->
+    <feat name="Tense" value="Past" upos="AUX,VERB">568</feat><!-- ib, aʔib, baq'ib, gub, bikib, gib, baqib, asib, bahur, baq'ile -->
+    <feat name="Tense" value="Pres" upos="VERB">47</feat><!-- balhan, wigan, berhuwe, iʔan, k'as, walhan, ħaburhan, ħalugan, arisan, bukan -->
+    <feat name="VerbForm" value="Conv" upos="AUX,VERB">253</feat><!-- diguwe, baq'ile, izuwe, wak'ile, bicile, k'uwe, luč'uwe, biq'uwe, biˤšqile, leble -->
+    <feat name="VerbForm" value="Fin" upos="AUX,VERB">728</feat><!-- ib, aʔib, bet'a, baq'ib, gub, baq'a, bikib, gib, baqib, asib -->
+    <feat name="VerbForm" value="Inf" upos="AUX,VERB">141</feat><!-- baq'as, uˤq'es, ases, izes, iˤšqes, q'aˤbʡes, ajzes, belč'es, diq'es, gʷes -->
+    <feat name="VerbForm" value="Part" upos="AUX,VERB">37</feat><!-- luč'ulijadal, wak'ibičela, bak'ibiʁale, bixibiħew, dalhul, q'oˤjħe, wak'ileʡur, wik'ulaʁle, ʡaˤšwirkulq'alle, barxibičela -->
+    <feat name="VerbForm" value="Vnoun" upos="AUX,VERB">17</feat><!-- baq'ri, berhri, berχʷrilizela, lerdeš, lewdeš, bak'ri, belč'undeš, berhundeš, buˤrʡuˤbdeš, luč'andeš -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="0">
+  <deps unique="34">
+    <dep name="acl">31</dep>
+    <dep name="advcl">114</dep>
+    <dep name="advmod">197</dep>
+    <dep name="amod">15</dep>
+    <dep name="aux">137</dep>
+    <dep name="cc">3</dep>
+    <dep name="ccomp">70</dep>
+    <dep name="compound:lvc">70</dep>
+    <dep name="compound:redup">7</dep>
+    <dep name="compound:svc">1</dep>
+    <dep name="conj">21</dep>
+    <dep name="cop">28</dep>
+    <dep name="csubj">1</dep>
+    <dep name="dep">1</dep>
+    <dep name="det">50</dep>
+    <dep name="discourse">3</dep>
+    <dep name="dislocated">4</dep>
+    <dep name="fixed">32</dep>
+    <dep name="flat:name">2</dep>
+    <dep name="iobj">57</dep>
+    <dep name="nmod">67</dep>
+    <dep name="nsubj">617</dep>
+    <dep name="nsubj:nc">145</dep>
+    <dep name="nummod">13</dep>
+    <dep name="obj">517</dep>
+    <dep name="obl">212</dep>
+    <dep name="obl:float">2</dep>
+    <dep name="obl:tmod">5</dep>
+    <dep name="orphan">2</dep>
+    <dep name="parataxis">31</dep>
+    <dep name="punct">844</dep>
+    <dep name="root">961</dep>
+    <dep name="vocative">21</dep>
+    <dep name="xcomp">122</dep>
   </deps>
 </treebank>
